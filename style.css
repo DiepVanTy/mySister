@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Ms+Madi&display=swap');
+:root {
+    font-size: calc(1vw + .8em);
+    font-family: 'Dancing Script', cursive;
+    color: #444;
+}
+* {
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1f5f8;
+    padding: 1em;
+}
+.card {
+    width: 17em;
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+.card:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.card__image {
+    height: 15em; 
+    overflow: hidden;
+}
+img {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.card__content {
+    position: relative;
+    padding: 1.5em 1em 1em
+
+}
+.smallAvatar {
+    position: absolute;
+    bottom: 100%;
+    transform: translateY(50%);
+    left: 1em;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    overflow: hidden;
+    outline: 4px solid white;
+}
+.describeList {
+    padding-left: 1em;
+}
+::marker {
+    color: dodgerblue;
+}
+.listItem {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.nagative_text {
+    text-align: center;
+    font-size: 0.8rem;
+}
+.contact_inf {
+    margin-top: 1em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.contact_inf i {
+    margin: 0 0.3em;
+    background-color: mediumseagreen;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.5em;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+}
+
+.follow_button {
+    padding: 0.3em 1em;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
